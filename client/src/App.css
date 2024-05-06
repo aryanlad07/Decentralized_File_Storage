@@ -1,0 +1,178 @@
+/* Global Reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+  height: 100vh;
+  margin: 0;
+  font-family: "Roboto", sans-serif, Arial, sans-serif; /* Fallback font */
+  background-color: #f9f9f9; /* Updated background color */
+}
+
+/* App Container */
+.App {
+  text-align: center;
+  padding: 20px; /* Add padding for smaller screens */
+}
+
+/* Logo */
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+/* Logo Animation */
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: spin 20s infinite linear;
+  }
+}
+
+/* Header */
+.App-header {
+  background-color: #2C3E50; /* Updated professional color */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+/* Link */
+.App-link {
+  color: #3498db; /* Updated professional color */
+}
+
+/* Keyframe Animation for Logo */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Background Animations */
+.bg {
+  animation: slide 5s ease-in-out infinite alternate;
+  background-image: linear-gradient(to right, #76ABAE  0%, #31363F 50%,#31363F 100%);
+  bottom: 0;
+  left: -50%;
+  opacity: 0.5;
+  position: fixed;
+  right: -50%;
+  top: 0;
+  z-index: -1;
+}
+
+.bg2 {
+  animation-direction: alternate-reverse;
+  animation-duration: 6s;
+}
+
+.bg3 {
+  animation-duration: 7s;
+}
+
+/* Content Box */
+.content {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 0.5em;
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.1);
+  padding: 5vw;
+  text-align: center;
+}
+
+/* Header Styles */
+header {
+  text-align: center;
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0 0 85% 85% / 30%;
+}
+
+header .overlay {
+  width: 100%;
+  height: 100%;
+  padding: 5vw;
+  color: #fff;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  background-image: linear-gradient(135deg, #9f05ff69 10%, #fd5e086b 100%);
+}
+
+/* Title Styles */
+h1 {
+  font-family: "Roboto", sans-serif; /* Use a more modern font */
+  font-size: 3vw;
+  margin-bottom: 2vw;
+  text-align: left;
+  display: flex;
+  
+  
+}
+
+/* Text Styles */
+p {
+  text-align: right;
+  font-size: 1vw;
+  margin-bottom: 2vw;
+  
+}
+h3{
+  margin-bottom: 2vw;
+  font-size: 1.5vw;
+}
+
+/* Share Button */
+.share {
+  padding: 1.5vw 2.5vw;
+  margin-top: 2vw;
+  background: #3498db; /* Updated professional color */
+  color: white;
+  border: none;
+  border-radius: 0.3em;
+  font-size: 1.2vw;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.share:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .App-logo {
+    height: 20vmin;
+  }
+  
+  .App-header {
+    min-height: auto;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 5vw;
+  }
+  
+  h3, p {
+    font-size: 3vw;
+  }
+  
+  .share {
+    font-size: 3vw;
+    padding: 3vw 5vw;
+  }
+}

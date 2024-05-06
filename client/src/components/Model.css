@@ -1,0 +1,134 @@
+.modalBackground {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalContainer {
+  width: 500px;
+  height: 200px;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+}
+
+.modalContainer {
+  display: inline-block;
+  text-align: center;
+}
+.title {
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+}
+
+.titleCloseBtn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.titleCloseBtn button {
+  background-color: transparent;
+  border: none;
+  font-size: 1px;
+  cursor: pointer;
+}
+
+.modalContainer .body {
+  flex: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.7rem;
+  text-align: center;
+}
+
+.modalContainer .footer {
+  flex: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalContainer .footer button {
+  
+  width: 100px;
+  height: 35px;
+  margin: 10px;
+  border: none;
+  background-color: cornflowerblue;
+  color: white;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#cancelBtn {
+
+  margin: 10px;
+  padding: 8px 8px; /* Adjust padding to provide space around the text */
+  background-color: crimson;
+}
+#share
+{
+  margin: 10px;
+  border-radius: 5px;
+  padding: 8px 8px; /* Adjust padding to provide space around the text */
+  background-color: rgb(19, 90, 148);
+}
+#not{
+  margin: 10px;
+  border-radius: 5px;
+  padding: 8px 8px; /* Adjust padding to provide space around the text */
+  background-color: rgb(159, 200, 227);
+}
+.address {
+  display: block;
+  margin: auto;
+  height: 30px;
+  width: 300px;
+  text-align: center;
+  border-radius: 5px; /* Rounded corners */
+
+}
+
+input[type="text"]:focus {
+  background-color: lightblue;
+}
+.access-list-container {
+  text-align: center; /* Center-align the content */
+  margin: 0 auto; /* Center the container horizontally */
+  max-width: 400px; /* Set maximum width for better readability */
+}
+
+.access-list-container p {
+  color: aliceblue;
+  text-align: center;
+  font-weight: bold; /* Make the paragraph text bold */
+  font-size: 20px;
+}
+.access-list-container ul {
+  color: aliceblue;
+  padding: 0; /* Remove default padding */
+  list-style: none; /* Remove default list styles */
+  counter-reset: my-counter; /* Reset counter for list items */
+}
+
+.access-list-container li {
+  margin-bottom: 10px; /* Add spacing between list items */
+  counter-increment: my-counter; /* Increment counter for each list item */
+}
+
+.access-list-container li::before {
+  content: counter(my-counter); /* Display counter before each list item */
+  font-weight: bold; /* Make the counter bold */
+  margin-right: 10px; /* Add space between counter and list item */
+}
+
